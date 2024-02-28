@@ -5,4 +5,22 @@ vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({search = vim.fn.input("Grep > ")});	
 end)
 
+require("telescope").setup({
+	extensions={
+		["ui-select"]={
+			require("telescope.themes").get_dropdown({
+				border = true,
+				winblend = 10,
+				previewer = false,
+				selection_caret = " ",
+				layout_config = {
+					width = 0.5,
+					height = 0.5,
+				},
+			}),
+		}
+	}
+})
+require("telescope").load_extension("ui-select")
+
 
