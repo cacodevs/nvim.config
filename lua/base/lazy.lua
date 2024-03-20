@@ -16,6 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     -- color schemes
     {"catppuccin/nvim", name="catppuccin", priority=1000},
+    -- lualine
+    {"nvim-lualine/lualine.nvim"},
     -- telescope
     {"nvim-telescope/telescope.nvim", name="telescope", tag="0.1.5", dependencies={'nvim-lua/plenary.nvim'}},
     {"nvim-telescope/telescope-ui-select.nvim"},
