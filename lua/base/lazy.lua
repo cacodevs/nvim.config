@@ -32,8 +32,9 @@ local plugins = {
     {"williamboman/mason.nvim",},
     {"williamboman/mason-lspconfig.nvim"},
     {"neovim/nvim-lspconfig", },
-
-
+    -- prettier
+    {'jose-elias-alvarez/null-ls.nvim'},
+    {'MunifTanjim/prettier.nvim'},
 }
 local opts = {
   -- Your configuration comes here
